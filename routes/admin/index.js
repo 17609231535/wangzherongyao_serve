@@ -101,7 +101,7 @@ module.exports = app => {
     // 校验用户名
     assert(req.user, 401, '请先登录(user)')
     await next()
-  }, upload.single('file'),authMiddleware(), async (req, res) => {
+  }, upload.single('file'), authMiddleware(), async (req, res) => {
     // 把请求的值放在常量里
     //其实req本事是没有file这个东西的是因为我们用了upload这个中间件
     const file = req.file

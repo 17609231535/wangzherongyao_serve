@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 // 创建mongo的schema(概要)(初始框架)
 const schema = new mongoose.Schema({
-  // 管理員賬號密zhang'hao
+  // 管理員账号密码
   username: { type: String },
   password: {
     type: String,
